@@ -65,9 +65,21 @@ for(var i = 0; i < peopleArray.length; i++){
 var names = []
 var occupation = []
 
-for(var i = 0; i <peopleArray.length; i++){
-    names.push(peopleArray[i].name)
-    occupation.push(peopleArray[i].occupation)
+// for(var i = 0; i <peopleArray.length; i++){
+//     names.push(peopleArray[i].name)
+//     occupation.push(peopleArray[i].occupation)
+// }
+// console.log(names)
+// console.log(occupation)
+
+for(var i = 0; i < peopleArray.length; i++){
+    if(i % 2 == 0){
+        names.push(peopleArray[i].name)
+    } else{
+        occupation.push(peopleArray[i].occupation)
+    }
 }
+
 console.log(names)
 console.log(occupation)
+
