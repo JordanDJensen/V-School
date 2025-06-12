@@ -17,9 +17,26 @@ function findMiddleIndex(str){
 console.log(findMiddleIndex("Hello World"))
 
 function returnFirstHalf(str){
-  let start = findMiddleIndex(str)
-  let result = str.slice(start, 5)
+  let middle = findMiddleIndex(str)
+  let result = str.slice(0, middle)
   
   return result
 }
 console.log(returnFirstHalf("Hello"))
+console.log(returnFirstHalf("Hello World"))
+
+function capitalizeAndLowercase(str){
+    let middle = str.length / 2 
+    
+
+     if(middle % 2 !== 0){
+        middle = Math.floor(middle) 
+     } 
+       let firstHalf = str.slice(0, middle)
+       let secondHalf = str.slice(middle, str.length)
+     
+
+    return firstHalf.toUpperCase() + secondHalf.toLowerCase()
+
+}
+console.log(capitalizeAndLowercase("Hello World"))
