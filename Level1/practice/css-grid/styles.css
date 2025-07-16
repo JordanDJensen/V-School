@@ -6,35 +6,46 @@ html, body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 5px;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 100px 200px 100px;
+    gap: 10px;
+    margin: 10px;
 }
+
 .grid-container div {
-    height: 100px;
-    border: 1px solid #000;
-    
+    border-radius: 10px;
 }
+
 
 #box1 {
-    background-color: blue;
-    grid-column: 1/3;
-
-}
-#box2 {
     background-color: red;
-    grid-column: 3/5;
+    grid-column: 1 / -1; 
 }
+
+
+#box2 {
+    background-color: blue;
+    grid-row: 2 / 4; 
+    grid-column: 1 / 3;
+}
+
+
 #box3 {
-    background-color: yellow;
-    grid-column: 1/2;
+    background-color: green;
+    grid-row: 2 / 3;
+    grid-column: 3 / 5;
 }
+
 
 #box4 {
     background-color: purple;
-    grid-column: 2/5;
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
 }
 
+
 #box5 {
-    background-color: green;
-    grid-column: 1/5;
+    background-color: purple;
+    grid-row: 3 / 4;
+    grid-column: 4 / 5;
 }
