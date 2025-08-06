@@ -1,9 +1,44 @@
+body, html {
+    background-color: beige;
+    margin: 0;
+}
+
 nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     width: 100%;
-    background-color: aqua;
+    background-color: white;
     height: 50px;
     font-size: 25px;
 }
 
+nav > a {
+    margin-top: 10px;
+    margin-right: 100px;
+}
+
+.title-message{
+    margin-top: 150px;
+    font-size: 56px;
+
+}
+
+.title {
+    margin-top: 100px;
+    margin-left: 200px;
+    width: 25%;
+    height: 500px;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.drone-photo{
+    width: 60%;
+    height: 300px;
+    margin-top: 100px;
+}
+
+.main-section{
+    display: flex;
+    justify-content: space-between;
+}
