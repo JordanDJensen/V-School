@@ -62,5 +62,25 @@ nav > a {
     margin:0;
     width: 100%;
     background-color: aliceblue;
-    height: 300px;
+    height: 600px;
+}
+
+.price-title{
+    text-align: center;
+    padding-top: 100px;
+    font-size: 48px;
+}
+
+.price-options{
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.price-options > div {
+    background-color: white;
+    height: 400px;
+    width: 20%;
+    
 }
