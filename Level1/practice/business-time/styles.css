@@ -25,7 +25,6 @@ nav > a {
 .title-message{
     margin-top: 150px;
     font-size: 56px;
-
 }
 
 .title {
@@ -43,13 +42,11 @@ nav > a {
     margin-top: 100px;
     margin-left: 80px;
     border-radius: 50%;
-    object-fit: cover
-    
+    object-fit: cover   
 }
 
 .main-section{
     display: flex;
-    
 }
 
 .img-area{
@@ -62,7 +59,7 @@ nav > a {
     margin:0;
     width: 100%;
     background-color: aliceblue;
-    height: 600px;
+    height: 800px;
 }
 
 .price-title{
@@ -74,13 +71,30 @@ nav > a {
 .price-options{
     display: flex;
     justify-content: space-between;
-    
-    
+    margin-top: 75px;
+    margin-left: 50px;
+    margin-right: 50px; 
 }
 
 .price-options > div {
     background-color: white;
-    height: 400px;
+    height: 450px;
     width: 20%;
-    
+    padding-left: 25px;
+    padding-top: 25px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+p {
+    padding-top: 20px;
+}
+
+ul {
+    padding-top: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
