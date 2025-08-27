@@ -12,3 +12,23 @@ console.log("As you were approaching Tatoonie your starship was shot down by the
     "in an escape pod and landed on Tatoonie. Now, it is time to find the missing droids."
 )
 
+let actions = ['walk', 'check inventory', 'quit']
+
+let startInventory = ['blaster', 'gernade', 'water flask']
+
+let gameOver = false; 
+
+while(gameOver === false){
+    let index = readlineSync.keyInSelect(actions, 'What would you like to do? ')
+    if( actions[index] === 'quit'){
+        console.log("Game over! You have failed the Rebellion.")
+        gameOver = true;
+    }
+
+    if(actions[index] === 'check inventory'){
+        console.log("inventory: " + startInventory.join(", "))
+    }
+}
+
+
+
