@@ -14,17 +14,38 @@ console.log("As you were approaching Tatoonie your starship was shot down by the
 
 console.log("")
 
-let actions = ['walk', 'check inventory', 'quit']
 
-let startInventory = ['blaster', 'gernade', 'water flask']
 
 let gameOver = false; 
 
+
+
 while(gameOver === false){
-    let answer = readlineSync.keyIn("What would you like to do? [w] walk, [i] check inventory, and [q] quit: ")
-    if(answer === 'q'){
-        console.log('Game over.')
-        gameOver = true;
+    let answer = readlineSync.keyIn("What would you like to do? [w] walk, [i] check inventory, and [q] quit: ", {limit: 'iqw'})
+    if (answer === 'q'){
+        quit();
     }
+
+    if(answer === 'i'){
+        checkInventory();
+    }
+    
+}
+
+function quit(){
+    console.log("Game over.")
+    gameOver = true;
+}
+
+function checkInventory(){
+    let startInventory = ['blaster', 'gernade', 'water flask']
+
+    console.log("Here is your inventory: " + startInventory.join(", "))
+    console.log("");
+
+}
+
+function startActions(){
+
 }
 
