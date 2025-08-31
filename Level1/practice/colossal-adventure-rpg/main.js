@@ -1,8 +1,21 @@
 const readlineSync = require('readline-sync');
 
-const name = readlineSync.question("What is your name player? ")
+let character = {
+    name: "",
+    hp: 100,
+    inventory: ['blaster', 'gernade', 'water flask']
+}
 
-console.log("Welcome to the Rebellion " + name + "! We will be flying our starship to the Tatooine system to locate two droids" + 
+let enemies =[
+    { name: "Jawas", hp: 25, inventory: 10, weapon: 'blaster'},
+
+
+
+];
+
+character.name = readlineSync.question("What is your name player? ")
+
+console.log("Welcome to the Rebellion " + character.name + "! We will be flying our starship to the Tatooine system to locate two droids" + 
     " which contain the plans of a secret weapon the Empire is building. In your pursuit, you may encounter Jawas, Tusken Raiders " + 
    "and Stormtroopers. Be safe out there and remember... May the Force be with you.")
 
@@ -29,6 +42,10 @@ while(gameOver === false){
     if(answer === 'i'){
         checkInventory();
     }
+
+    if(answer === 'w'){
+
+    }
     
 }
 
@@ -38,14 +55,13 @@ function quit(){
 }
 
 function checkInventory(){
-    let startInventory = ['blaster', 'gernade', 'water flask']
-
-    console.log("Here is your inventory: " + startInventory.join(", "))
+    console.log("Here is your inventory: " + character.inventory.join(", "))
     console.log("");
 
 }
 
 function startActions(){
+
 
 }
 
