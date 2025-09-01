@@ -7,7 +7,7 @@ let character = {
 }
 
 let enemies =[
-    { name: "Jawas", hp: 25, inventory: 10, weapon: 'blaster'},
+    { name: "Jawa", hp: 25, inventory: 10, weapon: 'blaster'},
 
 
 
@@ -44,6 +44,7 @@ while(gameOver === false){
     }
 
     if(answer === 'w'){
+        isWalking()
 
     }
     
@@ -60,8 +61,24 @@ function checkInventory(){
 
 }
 
-function startActions(){
+function isWalking(){
+    let randomNum = Math.floor(Math.random() * 4)
+    if(randomNum === 0){
+        console.log(` A ${enemies[0].name} has appear with ${enemies[0].hp} hp.`)
+        let actions = ["Run", "Fight"]
+        let choice = readlineSync.keyInSelect(actions, "What would you like to do?")
+        if(actions[choice] === "Run"){
+            console.log("You have a 50% chance to escape")
+        }
+    } else {
+        console.log("keep walking")
+    }
+    
+    // while(enemies[0].hp > 0 && character.hp > 0){
+       
 
+        
+    // }
 
 }
 
