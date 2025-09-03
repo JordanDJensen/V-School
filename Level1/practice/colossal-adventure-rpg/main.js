@@ -8,6 +8,8 @@ let character = {
 
 let enemies =[
     { name: "Jawa", hp: 25, inventory: 10, weapon: 'blaster'},
+    { name: "Tusken Raider", hp: 50, inventory: "blaster rifle"},
+    { name: "Stormtropper", hp: 65, invetory: 25, weapon: "blaster"}
 
 
 
@@ -64,12 +66,23 @@ function checkInventory(){
 function isWalking(){
     let randomNum = Math.floor(Math.random() * 4)
     if(randomNum === 0){
-        console.log(` A ${enemies[0].name} has appear with ${enemies[0].hp} hp.`)
+        let enemy = enemies[Math.floor(Math.random() * enemies.length)]
+        console.log(` A ${enemy.name} has appear with ${enemy.hp} hp.`)
         let actions = ["Run", "Fight"]
         let choice = readlineSync.keyInSelect(actions, "What would you like to do?")
         if(actions[choice] === "Run"){
-            console.log("You have a 50% chance to escape")
-        }
+           let isRunning = Math.random() < 0.5
+
+           if(isRunning){
+            let scratch = Math.floor(Math.random() * 25) + 1
+            character.hp -= scratch;
+            console.log(`You were able to escape from the ${enemy.name} but lost ${scratch} hp. (HP: ${character.hp})`)
+            return;
+           } 
+
+        } 
+
+
     } else {
         console.log("keep walking")
     }
