@@ -8,10 +8,13 @@ document.add.addEventListener("submit", function(e){
     
     let sum = num1 + num2
     
-   let total = document.createElement("h1");
-   total.textContent = "Sum: " + sum 
-
-   document.getElementById("add-container").appendChild(total)
+   const container = document.getElementById("add-container")
+   let total = container.querySelector("h1")
+   if (!total) {
+   	total = document.createElement("h1")
+   	container.appendChild(total)
+   }
+   total.textContent = "Sum: " + sum
     
 
 })
