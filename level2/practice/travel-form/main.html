@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <form name="travel">
+            <input type="text" placeholder="First Name" name="firstname"/><br>
+            <input type="text" placeholder="Last Name" name="lastname"/><br>
+            <input type="number" placeholder="Age" min="1" max="100" name="age"/><br>
+            <label>Male<input type="radio" name="gender" value="Male"/></label>
+            <label>Female <input type="radio" name="gender" value="Female"/></label><br>
+            <label>Location: 
+                <select id="location" name="locations">
+                    <option value="Los Angeles">Los Angeles,CA</option>
+                    <option value="New York">New York, NY</option>
+                    <option value="Seattle">Seattle, WA</option>
+                </select>
+            </label><br>
+            <label>Dietary restrictions: </label>
+            <input type="checkbox" name="dietaries" value="vegetarian"/>
+            <label>vegetarian</label>
+            <input type="checkbox" name="dietaries" value="kosher"/>
+            <label>kosher</label>
+            <input type="checkbox" name="dietaries" value="lactose free"/>
+            <label>lactose free</label><br><br>
+            <button type="submit" id="submit-form">Submit</button>
+
+        </form>
+        <script src="main.js"></script>
+    </body>
+</html>
