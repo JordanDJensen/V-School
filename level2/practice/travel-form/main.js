@@ -9,7 +9,18 @@ form.addEventListener("submit", (e)=>{
     const gender = form.gender.value
     const destination = form.locations.value
 
-    alert("First Name: " + firstname + "\nLast Name: " + lastname + "\nAge: " + age + "\nGender: " + gender + "\nDestination: " + destination) 
+    let dietaries = document.travel.dietaries
+
+    let checkedDietaries = [];
+
+    for(var i = 0; i < dietaries.length; i++){
+        if(dietaries[i].checked){
+            checkedDietaries.push(dietaries[i].value)
+        }
+    }
+    
+
+    alert("First Name: " + firstname + "\nLast Name: " + lastname + "\nAge: " + age + "\nGender: " + gender + "\nDestination: " + destination + "\nDietary Restrictions: " + checkedDietaries) 
 
     
 })
