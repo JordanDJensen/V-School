@@ -1,3 +1,24 @@
-h1 {
+span{
+    display: block;
+    font-size: 24px;
+}
+h4 {
     display: inline-block;
+}
+
+img{
+    height:150px;
+    width:150px
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.container div{
+    
+   
+    margin:50px
+   
 }
