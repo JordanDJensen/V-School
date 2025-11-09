@@ -1,14 +1,21 @@
 span{
     display: block;
     font-size: 24px;
+    text-align: center;
 }
 h4 {
     display: inline-block;
 }
 
+h1{
+    text-align: center;
+}
+
 img{
     height:150px;
-    width:150px
+    width:150px;
+    display: block;
+    margin: 25px auto;
 }
 
 .container{
@@ -17,8 +24,36 @@ img{
 }
 
 .container div{
-    
+    margin:50px;
+    background-color: antiquewhite;
+    height:400px;
+    width: 90%
    
-    margin:50px
-   
+}
+
+input{
+    display: block;
+    margin: 0 auto;
+}
+
+body{
+    background-image: url("/img/860645.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#submit{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.total{
+    text-align: center;
+    font-size: 28px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    width: 80%;
 }
