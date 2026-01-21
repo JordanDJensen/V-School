@@ -56,4 +56,23 @@ let result = namesWithAge.map(function(user){
 
 console.log(result)
 
+let yesOrNoResults = namesWithAge.map(function(user){
+    if(user.age > 18){
+        return `${user.name} can go to The Matrix`
+    } else {
+        return `${user.name}  is under age!!`
+    }
+})
+
+console.log(yesOrNoResults)
+
+
+let readyToPutInTheDOM = namesWithAge.map(function(user){
+    return `<h1>${user.name}</h1><h2>${user.age}</h2>`
+})
+console.log(readyToPutInTheDOM)
+
+
+
+
 
