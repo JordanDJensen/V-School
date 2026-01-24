@@ -43,6 +43,14 @@ function login(username, password){
   }
 }
 
-login("sam", "123abc")
+try {
+    login("sam", "123abc")
+    login("sam", "134abc")
+    
+} catch (error) {
+    console.log(error)
+}
 
-login("sam", "134abc")
+// login("sam", "123abc")
+// console.log("Second test:")
+// login("sam", "134abc")
