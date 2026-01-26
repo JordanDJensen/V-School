@@ -1,0 +1,51 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    gap: 10px;
+}
+
+.box1{
+     width: 400px;
+    height: 350px;
+    background-color: aquamarine;
+   
+}
+
+.box2{
+     width: 400px;
+    height: 350px;
+    background-color: blue;
+     
+}
+
+.box3{
+     width: 400px;
+    height: 350px;
+    background-color: red;
+    
+}
+
+.box4{
+     width: 400px;
+    height: 350px;
+    background-color: purple;
+    
+}
+
+.box5{
+     width: 400px;
+    height: 350px;
+    background-color: green;
+    
+}
+
+.box6{
+     width: 400px;
+    height: 350px;
+    background-color: yellow;
+    
+}
+
+
+
+
