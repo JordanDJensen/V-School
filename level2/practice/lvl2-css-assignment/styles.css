@@ -41,5 +41,6 @@ button{
 }
 
 button:hover{
-    opacity: 50%;
+    width: 90%;
+    height: 45px
 }
