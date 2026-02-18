@@ -18,3 +18,41 @@ body{
     height: 65px;
     background-color: beige;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 50px;
+}
+
+.form{
+    width: 50%;
+    height: 400px;
+    padding-top: 30px;
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.form input{
+    display:block;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 50px;
+    
+}
+
+button{
+    width: 70%;
+    margin-top: 10px;
+    background-color: deepskyblue;
+    height: 30px;
+    color: white;
+    border: none;
+    border-radius: 7px;
+
+}
+
+
+
