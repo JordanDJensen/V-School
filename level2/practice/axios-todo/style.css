@@ -51,8 +51,28 @@ button{
     color: white;
     border: none;
     border-radius: 7px;
-
 }
 
+
+.list{
+    width: 80%;
+    height: 400px;
+    background-color: beige;
+    overflow: scroll;
+    text-align: center;
+}
+
+.todo-item{
+    width: 50%;
+    height: 200px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 25px ;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
 
 
