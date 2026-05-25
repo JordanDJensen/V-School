@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+.nav-container{
+  display: flex;
+  justify-content: flex-end;
+  margin: -25px;
+  
+}
+
+.nav-items{
+  display: flex;
+  gap: 30px;
+  font-size: .75rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-right: 75px;
+  
+}
+
+.head{
+  background-image: url(./assets/home-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+  height: 75vh;
+  position: relative;
+  color: white;
+}
+
+.head::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);  /* adjust 0.45 */
+}
+
+.head > *{
+  position: relative;
+  z-index: 1;
+}
+
+.blog-header{
+  text-align: center;
+  margin-top: 150px;
+  font-size: 42px;
+
+}
+
+span{
+  display: inline-block;
+  margin-top: 50px;
+  margin-left: 75px;
+  font-size: 28px;
+}
+
+.blog-list {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+  color: #212529;
+}
+
+.blog-list > div {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.author-date{
+  font-size: 18px;
+  font-style: italic;
+  color: #6c757d;
+}
+
+.author-link{
+  text-decoration: none;
+  color: black;
+}
+
+.author-link:hover{
+  color: #0085A1;
+}
+
+.subTitle{
+  font-size: 24px;
+}
+
+.title{
+  font-size: 42px;
+}
+
+.title-link{
+  text-decoration: none;
+  color: black;
+}
+
+.title-link:hover{
+  color:#0085A1
+}
+
+hr{
+  margin-top: 25px;
+}
+
+
+
+
