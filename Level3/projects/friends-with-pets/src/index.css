@@ -1,0 +1,32 @@
+body{
+  box-sizing: 0;
+  margin: 0;
+}
+
+.header{
+  font-size: 48px;
+  text-align: center;
+  height: 75px;
+  width: 100%;
+  background-color: #E43A2B
+
+}
+
+.friend-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.friend-item{
+  border: 5px solid black;
+  flex: 1 1 30%;
+  min-width: 250px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.friend-item > h1 {
+  margin-left: 25px
+}
