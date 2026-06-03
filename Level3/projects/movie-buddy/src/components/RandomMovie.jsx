@@ -4,7 +4,7 @@ import movies from "../movies"
 export default function RandomMovie(){
     // let index = 0
 
-    let [index, setIndex] = useState(0)
+    let [movieIndex, setIndex] = useState(0)
 
     function getRandomMovie(){
         const randomIndex = Math.floor(Math.random() * movies.length)
@@ -12,20 +12,23 @@ export default function RandomMovie(){
         setIndex(randomIndex)
     }
     function nextMovie(num){
-        index += num
-        if(index < 0){
-            index = movies.length - 1;
-        }
-        if(index === movies.length){
-            index = 0;
-        }
-        console.log(movies[index])
+      setIndex(prevMovieIndex =>{
+            const newIndex = prevMovieIndex + num
+
+            if(newIndex < 0){
+                return movies.length - 1
+            } else if (newIndex === movies.length){
+                return 0
+            } else {
+                return newIndex
+            }
+      })
     }
     return(
         <div>
-            <h1>{movies[index].title}</h1>
-            <p>Description: {movies[index].description}</p>
-            <p>Rating: {movies[index].rating}</p>
+            <h1>{movies[movieIndex].title}</h1>
+            <p>Description: {movies[movieIndex].description}</p>
+            <p>Rating: {movies[movieIndex].rating}</p>
             <button onClick={() => nextMovie(-1)}>Prev Movie</button>
             <button onClick={() => nextMovie(1)}>Next Movie</button>
             <button onClick={getRandomMovie}>Random Movie</button>
