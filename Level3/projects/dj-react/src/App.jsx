@@ -10,8 +10,10 @@ function App() {
   function smallDJ(){
     if(colors[0] === "white"){
       setColors(['black', 'black', 'black', 'black'])
-    } else {
-      setColors(["white", "white", "white", "white"])
+    }
+
+    if(colors[0] === "black"){
+      setColors(['white', 'white', 'white', 'white'])
     }
   }
 
@@ -22,6 +24,26 @@ function App() {
   function leftBlue(){
     setColors([...colors.slice(0, 2), "blue", colors[3]])
 
+  }
+
+  function rightBlue(){
+    setColors([...colors.slice(0, 2), colors[2], "blue"])
+  }
+
+  function bigOne(){
+    setColors(["gold", colors[1], colors[2], colors[3]])
+  }
+
+  function bigTwo(){
+    setColors([colors[0], "red", colors[2], colors[3]])
+  }
+
+  function bigThree(){
+    setColors([colors[0], colors[1], "green", colors[3]])
+  }
+
+  function bigFour(){
+    setColors([colors[0], colors[1], colors[2], "orange"])
   }
  
   return (
@@ -34,6 +56,11 @@ function App() {
         <button onClick={() => smallDJ()}>DJ Small</button>
         <button onClick={() => partyDJ()}>DJ Party</button>
         <button onClick={() => leftBlue()}>Left Blue</button>
+        <button onClick={() => rightBlue()}>Right Blue</button>
+        <button onClick={() => bigOne()}>Big One</button>
+        <button onClick={() => bigTwo()}>Big Two</button>
+        <button onClick={() => bigThree()}>Big Three</button>
+        <button onClick={() => bigFour()}>Big Four</button>
       </div>
   
   )
