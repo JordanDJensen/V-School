@@ -34,7 +34,8 @@ export default function RandomMovie(props){
     }
 
     return(
-        <div>
+        <div className="random-movie-container">
+            <h2>Random Movie</h2> 
             <h1>{movies[movieIndex].title}</h1>
 
         {showDetails && (

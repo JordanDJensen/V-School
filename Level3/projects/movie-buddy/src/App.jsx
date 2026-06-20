@@ -4,9 +4,9 @@ import './App.css'
 import RandomMovie from './components/RandomMovie'
 import Nav from './components/Nav';
 import FavortieMovies from './components/FavoriteMovies';
+import Form from './components/Form';
 
 function App() {
-  const [count, setCount] = useState(0)
   const [theme, setTheme] = useState('light');
 
 
@@ -26,7 +26,9 @@ function App() {
   <div className={`${theme} main`}>
     <Nav toggleTheme={toggleTheme}/>
     <RandomMovie addMovie={addMovie} />
+    <Form addMovie={addMovie}/>
     <FavortieMovies favMovies={favMovies}/>
+    
   </div>
  )
 }
