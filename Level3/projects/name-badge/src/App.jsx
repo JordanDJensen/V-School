@@ -6,9 +6,19 @@ import BadgeList from './components/BadgeList'
 
 function App() {
 
+  const [badges, setBadges] = useState([])
+
+  function addBadge(newBadge){
+    setBadges(prevBadges =>{
+      return [...prevBadges, newBadge]
+    })
+
+  }
+
   return (
     <>
-      <BadgeForm />
+      <BadgeForm addBadge={addBadge} />
+      <BadgeList badges={badges}/>
 
     </>
   )
