@@ -18,9 +18,9 @@ export default function BadgeForm(props){
     console.log(formData)
 
     const isFormIncomplete = 
-    formData.user.trim() === '' || 
-    formData.description.trim() === '' ||
-    formData.phone.trim() === '' ||
+    formData.user.trim().length < 3 || 
+    formData.description.trim().length < 3 ||
+    formData.phone.trim().length < 3 ||
     formData.access === ''
 
     function handleChange(e){
