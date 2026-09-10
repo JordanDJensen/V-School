@@ -1,0 +1,28 @@
+*, body{
+  margin:auto 0;
+  box-sizing: 0;
+}
+
+.navbar{
+  background-color: lightblue;
+  height: 50px;
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(96vh - 50px);
+}
+
+.footer{
+  height: 30px;
+  background-color: beige;
+  width: auto;
+  text-align: center;
+}
