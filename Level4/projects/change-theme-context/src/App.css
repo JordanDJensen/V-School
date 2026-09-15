@@ -4,11 +4,22 @@
 }
 
 .navbar{
-  background-color: lightblue;
+  
   height: 50px;
   width: auto;
   display: flex;
   justify-content: space-around;
+}
+
+
+.light-navbar{
+  background-color: lightblue;
+  color: black;
+}
+
+.dark-navbar{
+  background-color: black;
+  color: white;
 }
 
 .main {
@@ -20,9 +31,21 @@
   min-height: calc(96vh - 50px);
 }
 
+.light-main{
+  background-color: white;
+  color: black;
+}
+
+.dark-main{
+  background-color: #242424;
+  color: white;
+}
+
+
 .footer{
   height: 30px;
   background-color: beige;
   width: auto;
   text-align: center;
 }
+

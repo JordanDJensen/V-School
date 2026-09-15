@@ -98,3 +98,9 @@ ul {
     padding-left: 20px;
     padding-right: 20px;
 }
+
+footer{
+    background-color: lightgray;
+    width: 100%;
+    height: 75px;
+}

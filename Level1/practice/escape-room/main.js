@@ -9,6 +9,7 @@
       switch (answer){
         case("2"):
             console.log("You have died.")
+            lifeMeter -=1;
             break;
         default:
             console.log("Hello")
@@ -16,5 +17,7 @@
 
     
     }
+
+    console.log("End of game.")
     
     

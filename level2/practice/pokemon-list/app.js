@@ -1,5 +1,6 @@
 
 
+
 axios.get("https://api.vschool.io/pokemon").then((result) => {
     const pokemonList = result.data.objects[0].pokemon
     for(let i = 0; i < pokemonList.length; i++){
